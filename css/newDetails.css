@@ -1,0 +1,105 @@
+
+	@media screen and (min-width: 768px) {
+			.wrap {
+				width: 100%;
+				max-width: 1440px;
+				padding: 110px 0 100px 80px;
+				margin: 0 auto;
+			}
+			
+		}
+		
+		.news-con {
+			width: 100%;
+			max-width: 1080px;
+			margin-bottom: 106px;
+			
+		}
+		.news-con img {
+			width: 100%;
+			margin: 0 0 20px 0;
+			box-shadow: none;
+		}
+		.news-con > img {
+			margin-bottom: 22px;
+		}
+		.row {
+			margin: 0;
+		}
+		.new-tit {
+			width: 100%;
+			height: 50px;
+			box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+		}
+		.new-tit em, .new-tit strong {
+			font-size: 12px;
+			line-height: 50px;
+			margin-right: 4px;
+		}
+		.new-tit em {
+			color: rgba(0, 0, 0, 0.26);
+			
+		}
+		.new-tit em:nth-child(1) {
+			padding-left: 35px;
+			background: url('../images/copy.png') no-repeat 16px 0;
+			-webkit-background-size: auto 100%;
+			background-size: auto 100%;
+		}
+		
+		.in-tit h2 {
+			width: 100%;
+			font-size: 24px;
+			line-height: 40px;
+			text-align: center;
+			margin: 0;
+			border: 0;
+		}
+		.in-tit {
+			height: 60px;
+			border-bottom: solid 2px rgba(30, 30, 30, 0.1);
+			margin-bottom: 30px;
+		}
+		.te-con > div {
+		    padding: 30px 40px 70px 40px;
+		    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+		    margin-bottom: 20px;
+		}
+	
+		.news-con  p {
+			text-indent: 2em;
+			margin: 0 0 20px 0;
+		}
+		.te-con div > div:nth-child(2) {
+			width: 100%;
+			height: 24px;
+			margin-bottom: 20px;
+		}
+		.te-con em {
+			float: right;
+		    font-size: 12px;
+		    padding-left: 23px;
+		    color: #bbb;
+		    background: url(../images/invalid-name.png) no-repeat;
+		    -webkit-background-size: auto 100%;
+		    background-size: auto 100%;
+		}
+		@media screen and (max-width: 768px) {
+			.news-nav {
+				display: none
+			}
+			.wrap {
+				padding-top: 4.6rem
+			}
+			.in-tit {
+				height: 80px;
+				border-bottom: solid 2px rgba(30, 30, 30, 0.1);
+				margin-bottom: 30px;
+			}
+			.te-con > div {
+			    padding: 2rem 2%;
+			    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+			    margin-bottom: 20px;
+			}
+		}

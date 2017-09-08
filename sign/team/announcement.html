@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>三创</title>
+
+    <!-- Global stylesheets -->
+    <link href="../https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/daterangepicker.js"></script>
+
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <!--<script type="text/javascript" src="../assets/js/pages/dashboard.js"></script>-->
+    <!-- /theme JS files -->
+
+</head>
+
+<body>
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="../assets/images/logo_light.png" alt=""></a>
+
+        <ul class="nav navbar-nav visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+            <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav">
+            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+
+
+        </ul>
+
+        <!--<p class="navbar-text"><span class="label bg-success-400">Online</span></p>-->
+
+        <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown dropdown-user">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="../assets/images/placeholder.jpg" alt="">
+                    <span>Victoria</span>
+                    <i class="caret"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    
+                    <li class="logOut"><a href="#"><i class="icon-switch2"></i> 退出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /main navbar -->
+
+
+<!-- Page header -->
+<div class="page-header" style="margin-bottom: 20px;">
+    <div class="breadcrumb-line breadcrumb-line-wide">
+        <ul class="breadcrumb">
+            <li><a href="index.html"><i class="icon-home2 position-left"></i> 主页</a></li>
+            
+            <li class="text-danger static">资料填写中</li>
+        </ul>
+    </div>
+
+</div>
+<!-- /page header -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main sidebar-default">
+            <div class="sidebar-content">
+
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-title h6">
+                        <span>主导航</span>
+                        <ul class="icons-list">
+                            <li><a href="#" data-action="collapse"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category-content sidebar-user">
+                        <div class="media">
+                            <a href="#" class="media-left"><img src="../assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+                            <div class="media-body">
+                                <span class="media-heading text-semibold">用户名</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion">
+
+                            <!-- Main -->
+                            <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+                            <li><a href="index.html"><i class="icon-home4"></i> <span>我的主页</span></a></li>
+                            <li><a href="#"><i class="icon-user"></i> <span>查看比赛成绩</span></a></li>
+                            <li class="active">
+                                <a href="#"><i class="icon-book"></i> <span>参赛指南</span></a>
+                                <ul>
+                                    <li><a href="groupSet.html">组别设置</a></li>
+                                    <li><a href="contestProcess.html">大赛流程</a></li>
+                                    <li class="active"><a href="announcement.html">大赛公告</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="userInfo.html"><i class="icon-user-plus"></i> <span>用户资料修改</span></a></li>
+                            <li>
+                                <a href="#"><i class="icon-pencil3"></i> <span>参赛资料填写</span></a>
+                                <ul>
+                                    <li><a href="setSourceOne.html">商业计划书</a></li>
+                                    <li><a href="setSourceTwo.html">补充资料</a></li>
+                                    <li><a href="setSourceThree.html">基本信息</a></li>
+                                    <li><a href="setSourcefour.html">核心团队</a></li>
+                                    <li><a href="setSourceFive.html">提交报名</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../#"><i class="icon-history"></i> <span>参赛资料导出</span></a></li>
+                            <li><a href="passwordUpdate.html"><i class="icon-key"></i> <span>密码修改</span></a></li>
+                            <li class="logOut"><a href="#"><i class="icon-footprint"></i> <span>安全退出</span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+        </div>
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Main charts -->
+            <div class="row guideLoad">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">大赛公告</h3>
+                            <div class="heading-elements">
+                                <ul class="icons-list">
+                                    <li><a data-action="collapse"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <p class="media-right col-lg-12">有意向落户晋江三创园 可联系我们 联系电话 0595-82076667 </p>
+                            <p class="media-right col-lg-12">2016海峡杯（晋江）创新 创业大赛圆满结束</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+
+</div>
+<!-- /page container -->
+<script>
+    $(function () {
+        var html = "";
+        shopAjax("post","guide/load",function (res) {
+            console.log(res);
+            var data = res.data;
+            for(var i = 0; i < data.length; i++){
+                if(data[i].name == "大赛公告"){
+                    html += '<div class="col-lg-12"> ' +
+                        '<div class="panel panel-default"> ' +
+                        '<div class="panel-heading"> ' +
+                        '<h3 class="panel-title">'+data[i].name+'</h3> ' +
+                        '<div class="heading-elements"> ' +
+                        '<ul class="icons-list"> ' +
+                        '<li><a data-action="collapse"></a></li> ' +
+                        '</ul> ' +
+                        '</div> ' +
+                        '</div> ' +
+                        '<div class="panel-body"> ' +
+                        data[i].content +
+                        '</div> ' +
+                        '</div> ' +
+                        '</div>'
+                }
+            }
+            $(".guideLoad").html(html);
+        },function (res) {
+            console.log(res)
+        })
+    })
+</script>
+</body>
+</html>

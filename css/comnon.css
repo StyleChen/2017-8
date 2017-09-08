@@ -1,0 +1,392 @@
+@charset 'utf-8';
+	/* 导航底部动画 */
+	@keyframes headerAnim {
+	    0% {
+	        background-position: 0 0
+	    }
+	    100% {
+	        background-position: 1440px 0
+	    }
+	}
+
+	@-webkit-keyframes headerAnim {
+	    0% {
+	        background-position: 0 0
+	    }
+	    100% {
+	        background-position: 1440px 0
+	    }
+	}
+
+	header:after {
+	    animation: headerAnim 6s infinite linear;
+	    -webkit-animation: headerAnim 6s infinite linear;
+	    width: 100%;
+	    background: url("../images/line@1x.png") repeat-x bottom center;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    height: 3px;
+	    display: block;
+	    content: "";
+	}
+	a:hover {
+    	text-decoration: none;
+	}
+	.new-tit {
+		border-top: 1px solid #14a1e7;
+	}
+.news-nav em {
+	position: absolute;
+	width: 32px;
+	height: 10px;
+	background: url('../images/jiantou.png') no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+@media screen and (min-width: 768px) {
+	header {
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		height: 90px;
+		width: 100%;
+		min-width: 1440px;
+		background: rgba(255,255,255,0.8);
+	}
+	.nav {
+		float: left;
+		height: 90px;
+		margin: 0 auto;
+	}
+	header > div {
+		position: relative;
+		width: 100%;
+		height: 90px;
+		max-width: 1440px;
+		padding: 0 2%;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	.logo {
+		float: left;
+		width: 224.4px;
+		height: 58px;
+		margin: 13px 90px 0 0;
+		background: url(../images/logo-copy-3@2x.png) no-repeat;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+	.logo img {
+		width: 100%;
+		height: 100%;
+		box-shadow: none;
+	}
+	.login {
+		margin-top: 36px;
+		float: right;
+		cursor: pointer;
+	}
+	.login a {
+		font-size: 14px;
+		
+	}
+	.login div {
+		font-size: 14px;
+		margin:  0 auto
+	}
+	.nav a {
+		float: left;
+		margin-right: 24px;
+		font-size: 16px;
+		line-height: 90px;
+	}
+	.nav a:hover {
+		color:  #14a1e7;
+	}
+	.foot .show {
+		display: none!important;
+	}
+	/*.foot*/
+	.foot {
+		height: 200px;
+		background: #14a1e7;
+
+	}
+	.foot > div {
+		float: left;
+		width: 50%;
+		height: 200px;
+		overflow: hidden;
+	}
+	.info {
+		background: #14a1e7;
+		height: 160px;
+	}
+	.info > div {
+		float: right;
+		width: 470px;
+		padding-top: 15px;
+	}
+	.info h2 {
+		font-size: 22px;
+		color: #fff;
+		margin:  0 0 0 0;
+	}
+	.info em {
+		display: block;
+		font-size: 12px;
+		color:  rgba(255, 255, 255, 0.6);
+		margin-bottom: 15px;
+	}
+	.content > div:nth-child(1) {
+		display: block;
+	}
+	.info p {
+		font-size: 14px;
+		color: #fff;
+		line-height: 20px;
+		margin: 0 0 5px 0;
+	}
+	.info div p:nth-child(4) {
+		margin-bottom: 5px;
+	}
+	.show {
+		display: none;
+	}
+	.info div p:last-child, .info div p:nth-child(5) {
+		color: rgba(255,255,255,0.6);
+	}
+	.footImg {
+		background: #f6f6f6;
+	}
+	.footImg > div {
+		width: 400px;
+		padding: 16px 0 0 90px;
+	}
+	.footImg div div {
+		height: 24px;
+		padding-left: 2%;
+		margin-bottom: 12px;
+	}
+	.footImg span {
+		font-size: 16px;
+		margin-right: 24px;
+		color: #333;
+	}
+	.footImg img {
+		display: block;
+		float: left;
+		height: 40px;
+		margin: 0 22px 14px 0;
+		box-shadow: none
+	}
+}
+
+@media screen and (max-width:768px) {
+	/* 头部导航*/
+	header {
+		position: fixed;
+		z-index: 99999999;
+		left: 0;
+		width: 100%;
+		height: 0;
+		height: 3.43rem;
+		background: rgba(255,255,255,0.9);
+	}
+	header > div {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	header .logo {
+		position: absolute;
+		left: 4%;
+		top: 0.2rem;
+		width: 10rem;
+		height: 2.57rem;
+		background: url(../images/logo-copy-3@2x.png);
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+	header .logo  img {
+		width: 100%;
+		height: 100%;
+		box-shadow: none
+	}
+	header .open {
+		position: absolute;
+		right: 3%;
+		top: 1rem;
+		width: 1.71rem;
+		height: 1.71rem;
+		background: url('../images/menu.png') no-repeat;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+	header .nav {
+		position: fixed;
+		display: none;
+		top: 3.43rem;
+		left: 0;
+		padding-top: 3rem;
+		width: 100%;
+		height: 100vh;
+		background: rgba(255,255,255,0.9);
+
+	}
+
+	.login {
+		width: 30%;
+		height: 2rem;
+		display: none;
+		position: fixed;
+		right: 10%;
+		bottom: 5rem;
+	}
+	.login a {
+		color: #39f;
+		font-size: 1rem;
+		margin: 10%;
+	}
+	.nav a {
+		display: block;
+		width: 100%;
+		font-size: 1rem;
+		line-height: 3.43rem;
+		text-align: center;
+		color: #14a1e7
+	 }
+	/*foot*/
+	.foot {
+		padding: 1rem 0 1rem 5%;
+		background: #f6f6f6;
+	}
+	.info h2,.info em, .info p {
+		display: none;
+	}
+	.info .show {
+		display: block;
+		font-size: 0.8rem;
+		text-align: left;
+		color: rgba(0, 0, 0, 0.54);
+		margin-bottom: 0.8rem;
+	}
+	.footImg {
+		background: #f6f6f6;
+		overflow: hidden;
+	}
+	.footImg span {
+		display: none;
+	}
+	.footImg img {
+		display: block;
+		float: left;
+		height: 1.71rem;
+		margin-right: 5%;
+		box-shadow: none;
+	}
+	.down {
+		z-index: 11;
+		position: absolute;
+		right: 10%;
+		bottom: 4rem;
+		width: 2.38rem;
+		height: 2.86rem;
+		background: url('../images/scroll@2x.png');
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		-ms-background-size: 100% 100%;
+		-o-background-size: 100% 100%;
+		animation: sport 2s linear infinite;
+
+	}
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+	header {
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		height: 80px;
+		width: 100%;
+		background: rgba(255,255,255,0.8);
+	}
+
+	.nav {
+		float: left;
+		height: 80px;
+		margin: 0 auto;
+	}
+	header > div {
+		position: relative;
+		width: 100%;
+		height: 80px;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	.logo {
+		float: left;
+		width: 224px;
+		height: 58px;
+		margin: 13px 80px 0 0;
+	}
+	.login {
+		position: fixed;
+		right: 4%;
+		top: 8px;
+		margin-top: 0;
+		cursor: pointer;
+	}
+	.login a {
+		font-size: 14px;
+		
+	}
+	.login div {
+		font-size: 14px;
+		margin:  0 auto
+	}
+	.nav a {
+		float: left;
+		margin-right: 24px;
+		font-size: 16px;
+		line-height: 80px;
+	}
+	
+	.partners li{
+		margin-bottom: 0;.
+	}
+}
+@media screen and (min-width: 1440px) {
+	.content h3 {
+		margin-bottom: 40px;
+	}
+	.content > div:nth-child(4) {
+		padding-top: 460px;
+		
+	}
+}
+	.in-tit h2 {
+		float: left;
+		width: 98px;
+		font-size: 20px;
+		line-height: 34px;
+		border-bottom: 2px solid #14a1e7;
+		margin: 0 4px 0 0;
+	}
+	.in-tit {
+		height: 35px;
+		border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+		margin-bottom: 30px;
+	}
+	p {
+		line-height: 1.6;
+	}
+	.login span {
+		margin: 0 8px;
+	}
+.login a:hover {
+	color: #14a1e7;
+}
+	

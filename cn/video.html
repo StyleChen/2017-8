@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale1.0">
+	<title>视频资讯</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/comnon.css">
+	<link rel="stylesheet" href="../css/news.css">
+	<link rel="shortcut icon" href="../logo.ico">
+	<style>
+		.news-nav > div:nth-child(2) {
+			opacity: 0.5
+		}
+		.news-nav em {
+			top: 150px;
+			left: 160px;
+		}
+
+		@media screen and (max-width: 768px) {
+			.wrap {
+				padding-top: 4.6rem
+			}
+		}
+	</style>
+</head>
+<body>
+<header class="wow fadeInDown">
+	<div>
+		<a class="logo" href="../index.html"></a>
+		<div class="open"></div>
+		<div class="nav" ontouchmove="return false">
+			<a href="../index.html">大赛首页</a>
+			<a href="Introduction.html">大赛简介</a>
+			<a href="news.html">新闻资讯</a>
+			<a href="teacher.html">评委导师</a>
+			<a href="mechanism.html">合作机构</a>
+			<a href="project.html">参赛项目</a>
+			<a href="competition.html">赛事合作</a>
+		</div>
+		<div class="login shows"><div><a href="statement.html">注册</a><span>/</span><a href="http://jjchuang.cn:8089/login.aspx">登录</a></div></div>
+	</div>
+</header>
+	<div class="wrap container">
+		<div class="news-con">
+			<div class="new-tit">
+				<em><a href="../index.html">首页</a></em>
+				<em>/</em>
+				<strong>视频资讯</strong>
+			</div>
+			<ol class="row newList">
+				<li>
+					<a href="newDetails.html">
+						<dl class="col-md-12">
+							<dt><img src="../images/img.jpg" alt="" class=".img-responsive"><strong class="play"></strong></dt>
+							<dd>
+								<h2>海峡杯（晋江）创新创业大赛完美收官，302万大赛花落谁家？【内附获奖名单】</h2>
+								<em>2016-09-09</em>
+							</dd>
+
+						</dl>
+					</a>
+				</li>
+			</ol>
+			<div class="page">
+				<div class="pre"><span></span></div>
+				<div class="frist"><span>首页</span></div>
+				<ul class="pageNo">
+					<li class="pageNo-active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+				<div class="last"><span>末页</span></div>
+				<div class="next"><span></span></div>
+			</div>
+		</div>
+		<div class="news-nav">
+			<em></em>
+			<div>
+				<a href="news.html">
+					<h2>新闻</h2>
+					<h3>NEWS</h3>
+				</a>	
+			</div>
+			<div>
+				<a href="video.html"></a>
+				<h2>视频</h2>
+				<h3>VIDEO</h3>
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+		<div class="info">
+			<div>
+				<h2>2017“海峡杯”福建（晋江）创新创业大赛</h2>
+				<em>FUJIAN JINJIANG INNOVATIVE ENTREPRENURSHIP COMPETITION</em>
+				<p>T/0595-82076667</p>
+				<p>D/福建省晋江市罗山街道苏内社区创意创业创新园</p>
+				<p style="color: #fff;margin-bottom: 15px;">设计与技术支持：晋江市平空工业设计有限公司 <a style="color: #fff;" href="https://www.gccn.cc" target="_blank">www.gccn.cc/</a></p>
+				<p style="color: rgba(255, 255, 255, 0.6)">晋江市创意创业创新园 Copyright © 2017 闽ICP备16017093号-1</p>
+				<p class="show">晋江市创意创业创新园 <br>Copyright © 2017 闽ICP备16017093号-1 </p>
+			</div>
+		</div>
+		<div class="footImg">
+			<div>
+				<div>
+					<span>关于我们</span>
+					<span>联系我们</span>
+					<span>常见问题</span>
+				</div>
+				<img src="../images/img-1.png" alt="">
+				<img src="../images/img-2.png" alt="">
+				<img src="../images/img-3.png" alt="">
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
+	<script src="../js/public.js" type="text/javascript"></script>
+	<script src="../js/head.js"></script>
+	<script type="text/javascript">
+		$(function () {
+            $(window).resize(init);
+            function init(){
+                var wid = $(window).width();
+                $('html').css({
+                    'font-size' : 14/375 * wid + 'px'
+                })
+            }
+            init();
+            var options = {pageSize:3,pageNo:1};
+            var total = 0;
+            function newListFun(option) {
+                ajax("get","video/load",option,function (res) {
+                    console.log(res);
+                    var newList = "";
+                    var liLength = "";
+                    total = res.data.totalPage;
+                    for(var n=0;n<res.data.videoList.length;n++){
+                        newList += '<li> ' +
+                            '<a href="'+res.data.videoList[n].videoUrl+'" target="_blank"> ' +
+                            '<dl class="col-md-12"> ' +
+                            '<dt><img src="'+res.data.videoList[n].cover+'" alt="" class=".img-responsive"><strong class="play"></strong></dt> ' +
+                            '<dd> ' +
+                            '<h2>'+res.data.videoList[n].name+'</h2> ' +
+                            '<em>'+res.data.videoList[n].videoDate+'</em> ' +
+                            '</dd>' +
+                            '</dl> ' +
+                            '</a> ' +
+                            '</li>'
+                    }
+                    var pageNo = option.pageNo;
+                    pageNo = pageNo - 4 > 0 ? pageNo - 4 : 1;
+                    var p = 0;
+                    for(var l=pageNo;l<=res.data.totalPage;l++){
+                        p++;
+                        if(p > 4){
+                            break
+                        }
+                        if(l == res.data.nowPage){
+                            liLength += '<li class="pageNo-active" data-index="'+l+'">'+l+'</li>';
+                        }else {
+                            liLength += '<li data-index="'+l+'">'+l+'</li>';
+                        }
+                    }
+                    $(".newList").html(newList);
+                    $(".pageNo").html(liLength);
+                    $(".pageNo li").click(function () {
+                        options.pageNo = $(this).data("index");
+                        newListFun(options);
+                    })
+                })
+            }
+            newListFun(options);
+            //首页
+            $(".frist").click(function () {
+                options.pageNo = 1;
+                newListFun(options);
+            });
+            //末页
+            $(".last").click(function () {
+                options.pageNo = total;
+                newListFun(options);
+            });
+            //下一页
+            $(".next").click(function () {
+                options.pageNo++;
+                if(options.pageNo <= total){
+                    newListFun(options);
+                }
+
+            });
+            //上一页
+            $(".pre").click(function () {
+                options.pageNo--;
+                if(options.pageNo > 0){
+                    newListFun(options);
+                }
+            })
+        })
+	</script>
+<!--屏蔽微信分享入口-->
+    <script src="../js/noShare.js"></script>
+</body>
+</html>

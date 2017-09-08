@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>“海峡杯”（晋江）创业创新大赛</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/forms/wizards/stepy.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery_ui/datepicker.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery_ui/effects.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/notifications/jgrowl.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/anytime.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/pickadate/picker.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/pickadate/legacy.js"></script>
+
+    <script type="text/javascript" src="../assets/js/pages/jquery.form.js"></script>
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/wizard_stepy.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/picker_date.js"></script>
+    <style>
+        select{
+            height: 36px;
+            padding:7px 12px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            width:32% !important;
+            outline: 0;
+        }
+        .city{
+            margin: 0 2%;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="../assets/images/logo_light.png" alt=""></a>
+
+        <ul class="nav navbar-nav visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+            <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav">
+            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+
+
+        </ul>
+
+        <!--<p class="navbar-text"><span class="label bg-success-400">Online</span></p>-->
+
+        <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown dropdown-user">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="../assets/images/placeholder.jpg" alt="">
+                    <span>Victoria</span>
+                    <i class="caret"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    
+                    <li class="logOut"><a href="#"><i class="icon-switch2"></i> 退出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /main navbar -->
+
+
+<!-- Page header -->
+<div class="page-header" style="margin-bottom: 20px;">
+    <div class="breadcrumb-line breadcrumb-line-wide">
+        <ul class="breadcrumb">
+            <li><a href="index.html"><i class="icon-home2 position-left"></i> 主页</a></li>
+            
+            <li class="text-danger static">资料填写中</li>
+        </ul>
+    </div>
+
+</div>
+<!-- /page header -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main sidebar-default">
+            <div class="sidebar-content">
+
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-title h6">
+                        <span>主导航</span>
+                        <ul class="icons-list">
+                            <li><a href="#" data-action="collapse"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category-content sidebar-user">
+                        <div class="media">
+                            <a href="#" class="media-left"><img src="../assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+                            <div class="media-body">
+                                <span class="media-heading text-semibold">用户名</span>
+                                <div class="text-size-mini text-muted">
+                                    <i class="icon-pin text-size-small"></i> &nbsp;地址
+                                </div>
+                            </div>
+
+                            <div class="media-right media-middle">
+                                <ul class="icons-list">
+                                    <li>
+                                        <a href="#"><i class="icon-cog3"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion">
+
+                            <!-- Main -->
+                            <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+                            <li><a href="index.html"><i class="icon-home4"></i> <span>我的主页</span></a></li>
+                            <li><a href="setSourceTwo.html"><i class="icon-user"></i> <span>查看比赛成绩</span></a></li>
+                            <li>
+                                <a href="#"><i class="icon-book"></i> <span>参赛指南</span></a>
+                                <ul>
+                                    <li><a href="groupSet.html">组别设置</a></li>
+                                    <li><a href="contestProcess.html">大赛流程</a></li>
+                                    <li><a href="announcement.html">大赛公告</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="userInfo.html"><i class="icon-user-plus"></i> <span>用户资料修改</span></a></li>
+                            <li>
+                                <a href="#"><i class="icon-pencil3"></i> <span>参赛资料填写</span></a>
+                                <ul>
+                                    <li><a href="setSourceOne.html">商业计划书</a></li>
+                                    <li><a href="setSourceTwo.html">补充资料</a></li>
+                                    <li><a href="setSourceThree.html">基本信息</a></li>
+                                    <li><a href="setSourcefour.html">核心团队</a></li>
+                                    <li><a href="setSourceFive.html">提交报名</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="icon-history"></i> <span>参赛资料导出</span></a></li>
+                            <li><a href="passwordUpdate.html"><i class="icon-key"></i> <span>密码修改</span></a></li>
+                            <li class="logOut"><a href="#"><i class="icon-footprint"></i> <span>安全退出</span></a></li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+        </div>
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <div class="panel">
+                <div class="panel-heading bg-primary">
+                    <h6 class="panel-title">用户基本资料</h6>
+                </div>
+                <div class="panel-body">
+                    <form action="http://119.23.12.96:8080/jc/user/update" method="post" onsubmit="return saveReport(this);">
+                        <input required type="hidden" name="userId">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <label><span class="text-danger">*</span>真实姓名</label>
+                                    <input required type="text" name="realName" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <label><span class="text-danger">*</span>组别</label>
+                                    <input required type="text" disabled="disabled" class="form-control" value="企业组">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="">
+                                <div class="form-group col-lg-12 col-xs-12">
+                                    <p><span class="text-danger">*</span>项目来源</p>
+                                    <select required name="province" class="col-lg-4 col-xs-4 province">
+                                        <option value="">--请选择--</option>
+                                        <option value="340000000000">安徽省</option>
+                                        <option value="110000000000">北京市</option>
+                                        <option value="350000000000">福建省</option>
+                                        <option value="620000000000">甘肃省</option>
+                                        <option value="440000000000">广东省</option>
+                                        <option value="450000000000">广西壮族自治区</option>
+                                        <option value="520000000000">贵州省</option>
+                                        <option value="460000000000">海南省</option>
+                                        <option value="130000000000">河北省</option>
+                                        <option value="410000000000">河南省</option>
+                                        <option value="230000000000">黑龙江省</option>
+                                        <option value="420000000000">湖北省</option>
+                                        <option value="430000000000">湖南省</option>
+                                        <option value="220000000000">吉林省</option>
+                                        <option value="320000000000">江苏省</option>
+                                        <option value="360000000000">江西省</option>
+                                        <option value="210000000000">辽宁省</option>
+                                        <option value="150000000000">内蒙古自治区</option>
+                                        <option value="640000000000">宁夏回族自治区</option>
+                                        <option value="630000000000">青海省</option>
+                                        <option value="370000000000">山东省</option>
+                                        <option value="140000000000">山西省</option>
+                                        <option value="610000000000">陕西省</option>
+                                        <option value="310000000000">上海市</option>
+                                        <option value="510000000000">四川省</option>
+                                        <option value="120000000000">天津市</option>
+                                        <option value="540000000000">西藏自治区</option>
+                                        <option value="650000000000">新疆维吾尔自治区</option>
+                                        <option value="530000000000">云南省</option>
+                                        <option value="330000000000">浙江省</option>
+                                        <option value="500000000000">重庆市</option>
+                                        <option value="980000000000">台湾省</option>
+                                        <option value="990000000000">海外地区</option>
+                                    </select>
+                                    <select required name="city" class="col-lg-4 col-xs-4 city">
+                                        <option value="">--请选择--</option>
+                                    </select>
+                                    <select required name="area" class="col-lg-4 col-xs-4 area">
+                                        <option value="">--请选择--</option>
+                                    </select>
+                                </div>
+                                <!--<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <label> &nbsp;</label>
+
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <label> &nbsp;</label>
+
+                                </div>-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <label><span class="text-danger">*</span>手机号</label>
+                                    <input required type="tel" name="phone" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <label><span class="text-danger">*</span>邮箱</label>
+                                    <input required type="email" name="email" class="form-control" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <label><span class="text-danger">*</span>QQ或MSN</label>
+                                    <input required type="number" name="qq" class="form-control" placeholder="QQ或MSN">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <label><span class="text-danger">*</span>办公电话</label>
+                                    <input required type="text" name="tel" class="form-control" placeholder="办公电话">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <label><span class="text-danger">*</span>传真</label>
+                                    <input required type="text" name="fax" class="form-control" placeholder="传真">
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-right"><button class="btn btn-info submit">保存 <i class="position-right icon-checkmark4"></i></button></p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+
+</div>
+<!-- /page container -->
+<script>
+    $(function () {
+        $(".province,.city").change(function (e) {
+            var value = parseInt(e.target.value);
+            var _this = $(this);
+            $.ajax({
+                type: "get",
+                async: false,
+                url: "http://119.23.202.46:8080/jc/address/next",
+                data: {addressNum: value},
+                dataType: "json",
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                success: function (res) {
+                    if(res.code == 0){
+                        _this.next().html(res.data)
+                    }
+                },
+                error: function (res) {
+                    console.log("error", res)
+                }
+            })
+        });
+        $(".submit").click(function () {
+
+        })
+
+    })
+</script>
+</body>
+</html>

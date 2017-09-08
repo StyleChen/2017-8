@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale1.0">
+	<title>注册-联系方式</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/comnon.css">
+	<link rel="stylesheet" href="../css/registered.css">
+	<link rel="stylesheet" href="../css/contect.css">
+	<link rel="shortcut icon" href="../logo.ico">
+	<style>
+		
+	
+	</style>
+	
+</head>
+<body>
+<header class="wow fadeInDown">
+	<div>
+		<a class="logo" href="../index.html"></a>
+		<div class="open"></div>
+		<div class="nav" ontouchmove="return false">
+			<a href="../index.html">大赛首页</a>
+			<a href="Introduction.html">大赛简介</a>
+			<a href="news.html">新闻资讯</a>
+			<a href="teacher.html">评委导师</a>
+			<a href="mechanism.html">合作机构</a>
+			<a href="project.html">参赛项目</a>
+			<a href="competition.html">赛事合作</a>
+		</div>
+		<div class="login shows"><div><a href="statement.html">注册</a><span>/</span><a href="login.html">登录</a></div></div>
+	</div>
+</header>
+	<div class="wrap container">
+		<div class="registered-nav ">
+			<div class="row">
+				<div class="">
+					<span></span>
+					<p>参赛声明</p>
+				</div>
+				<div class="">
+					<span></span>
+					<p>注册信息</p>
+				</div>
+				<div class="shows">
+					<span>3</span>
+					<p>联系方式</p>
+				</div>
+				<div>
+					<span style="background: #fff">4</span>
+					<p>注册成功</p>
+				</div>
+			</div>
+			<div class="line"></div>
+		</div>
+		<div class="registerd-con">
+			<div>
+				<h2>联系方式</h2>
+			</div>
+			<ul class="row">
+				<li class="col-md-6">
+					<p><em>*</em>真实姓名</p>
+					<div class="row">
+						<div class="col-md-12"><input type="text" placeholder="请输入您的真实姓名(必填项)" maxLength="8" id="name"></div></div>
+				</li>
+				<li class="col-md-6">
+					<p>微信号</p>
+					<div class="row"><div class="col-md-12"><input class="chuan" type="text" placeholder="请输入您的微信号"></div></div>
+				</li>
+				<li class="col-md-6">
+					<p><em>*</em>手机</p>
+					<div class="row"><div class="col-md-12"><input class="tel" type="text" placeholder="请输入您的手机号(必填项)" maxLength="11" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();"></div></div>
+				</li><li class="col-md-6">
+					<p>固定电话</p>
+					<div class="row"><div class="col-md-12"><input type="text" class="phone" placeholder="请输入您的固定电话" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();"></div></div>
+				</li>
+				<li class="col-md-6">
+					<p><em>*</em>项目来源</p>
+					<div class="loca">
+					    <input type="hidden" name="">
+						<select name="province" id="province" class="state select input-small valid" style=""
+								aria-required="true" aria-invalid="false" aria-describedby="province-error">
+							<option value="">--请选择--</option>
+							<option value="340000000000">安徽省</option>
+							<option value="110000000000">北京市</option>
+							<option value="350000000000">福建省</option>
+							<option value="620000000000">甘肃省</option>
+							<option value="440000000000">广东省</option>
+							<option value="450000000000">广西壮族自治区</option>
+							<option value="520000000000">贵州省</option>
+							<option value="460000000000">海南省</option>
+							<option value="130000000000">河北省</option>
+							<option value="410000000000">河南省</option>
+							<option value="230000000000">黑龙江省</option>
+							<option value="420000000000">湖北省</option>
+							<option value="430000000000">湖南省</option>
+							<option value="220000000000">吉林省</option>
+							<option value="320000000000">江苏省</option>
+							<option value="360000000000">江西省</option>
+							<option value="210000000000">辽宁省</option>
+							<option value="150000000000">内蒙古自治区</option>
+							<option value="640000000000">宁夏回族自治区</option>
+							<option value="630000000000">青海省</option>
+							<option value="370000000000">山东省</option>
+							<option value="140000000000">山西省</option>
+							<option value="610000000000">陕西省</option>
+							<option value="310000000000">上海市</option>
+							<option value="510000000000">四川省</option>
+							<option value="120000000000">天津市</option>
+							<option value="540000000000">西藏自治区</option>
+							<option value="650000000000">新疆维吾尔自治区</option>
+							<option value="530000000000">云南省</option>
+							<option value="330000000000">浙江省</option>
+							<option value="500000000000">重庆市</option>
+							<option value="980000000000">台湾省</option>
+							<option value="990000000000">海外地区</option>
+
+						</select>
+						<select name="city" id="city" class="state select input-small valid" style=""
+								aria-required="true" aria-invalid="false" aria-describedby="province-error">
+							<option value="">--请选择--</option>
+							<!-- <option value="">海外地区</option> -->
+						</select>
+						<select name="city" id="area" class="state select input-small valid" style=""
+								aria-required="true" aria-invalid="false" aria-describedby="province-error">
+							<option value="">--请选择--</option>
+							<!-- <option value="">海外地区</option> -->
+						</select>
+					</div>
+				</li>
+				<li class="col-md-6">
+					<p><em>*</em>QQ</p>
+					<div class="row"><div class="col-md-12"><input type="text" id="qq" placeholder="请输入您的QQ号" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();"></div></div>
+				</li>
+				<li class="col-md-6">
+					<p>用户类型<em>*</em></p>
+					<select name="usertype" id="usertype">
+						<option value="0">企业组</option>
+						<option value="1">团队组</option>
+					</select>
+				</li>
+				<li class="col-md-6">
+					<p>备注</p>
+					<div class="haiwai"><input id="remark" type="text" placeholder="海外地区用户请填写详细项目来源"></div>
+				</li>
+			</ul>
+			<div class="submit">完成</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/head.js" type="text/javascript"></script>
+	<script src="../js/linkage.js"></script>
+	<script>
+
+		$(function () {
+		    var userId = sessionStorage.userId;
+            var userData = new Object;
+            userData.userId = userId;
+            userData.province = "";
+            userData.city = "";
+            userData.area = "";
+            userData.userType = 0;
+            $('.submit').on('click',function  () {
+                submit();
+            });
+            document.onkeydown = function(e){
+                var ev = document.all ? window.event : e;
+                if(ev.keyCode==13) {
+                    submit();
+                }
+            };
+            function submit() {
+				var phone = /^1[34578]\d{9}$/;
+                userData.phone = parseInt($(".tel").val());
+                userData.tel = $(".phone").val();
+                userData.fax = $(".chuan").val();
+                userData.realName = $("#name").val();
+                userData.remarks = $("#remark").val();
+                userData.qq = $("#qq").val();
+                console.log(userData)
+                if(!phone.test(userData.phone)){
+                    alert("手机号码格式错误");
+                    return;
+				}
+				if(($.trim(userData.realName).length < 1) || (userData.area == "") || ($.trim($("#qq").val()).length == 0) ){
+				    alert("请补全必填信息");
+				    return;
+				}
+				if($.trim($(".phone").val()).length > 0){
+                    if($(".phone").val().indexOf("-") == -1){
+                        alert("固话格式不正确，缺少‘-’");
+                        return;
+					}
+				}
+                console.log(userData);
+                $.ajax({
+                    type: "post",
+                    async: false,
+                    url: "http://jjchuang.cn:8089/ashx/common.ashx?action=register_step3_sumbit",
+                    data: userData,
+                    dataType: "json",
+                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                    success: function (res) {
+                        console.log(res);
+                        if(res.code == 0){
+                            window.location.href="success.html"
+                        }else {
+						window.location.href="success.html"
+						}
+                    },
+                    error: function (res) {
+                        console.log("error", res);
+						window.location.href="success.html"
+                    }
+                })
+            }
+            $("#province,#city").change(function (e) {
+				var value = parseInt(e.target.value);
+				var _this = $(this);
+				if(_this.attr("id") == "province"){
+                    userData.province = parseInt(e.target.value);
+                    userData.city = "";
+                    userData.area = "";
+				}else {
+                    userData.city = parseInt(e.target.value);
+                    userData.area = "";
+				}
+
+                $.ajax({
+                    type: "get",
+                    async: false,
+                    url: "http://jjchuang.cn:8089/ashx/common.ashx?action=changeitem",
+                    data: {pid: value},
+                    dataType: "json",
+                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                    success: function (res) {
+                        console.log(res)
+                        if(res.code == 0){
+                            _this.next().html(res.data)
+						}
+                    },
+                    error: function (res) {
+                        console.log("error", res)
+                    }
+                })
+            });
+			$("#area").change(function (e) {
+                userData.area = parseInt(e.target.value);
+            });
+			$("#usertype").change(function (e) {
+                userData.userType = parseInt(e.target.value);
+            });
+        })
+	</script>
+
+
+<!--屏蔽微信分享入口-->
+    <script src="../js/noShare.js"></script>
+	
+</body>
+</html>
